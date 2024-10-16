@@ -1,5 +1,8 @@
 import sys, click
 
+from os import path
+sys.path.append( path.dirname( path.abspath(__file__) ) )
+
 import safetensors_worker
 # This file deals with command line only. If the command line is parsed successfully,
 # we will call one of the functions in safetensors_worker.py.
